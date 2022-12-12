@@ -56,8 +56,10 @@ const SignupView = () => {
   };
   return (
     <Box 
-    w='100%' 
-    h='1000px' 
+    marginLeft={'auto'}
+    marginRight={'auto'}
+    w='700px'
+    h='800px'
     bgGradient='linear(to-r, gray.500, green.400, blue.300)'>
     <Flex 
     >

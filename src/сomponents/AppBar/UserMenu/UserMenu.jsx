@@ -15,7 +15,7 @@ const UserMenu = () => {
       <Flex h={16} alignItems={'center'} 
       >
         <Text fontSize="23px" color="green"  mr={30}>
-        hi {name} !
+        Hi, {name} !
         </Text>
         <Button
           type="button"

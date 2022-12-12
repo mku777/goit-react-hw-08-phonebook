@@ -54,8 +54,10 @@ const LoginView = () => {
 
   return (
     <Box
-      w="100%"
-      h="1000px"
+    marginLeft={'auto'}
+marginRight={'auto'}
+w='700px'
+h='800px'
       bgGradient="linear(to-r, gray.300, red.300, green.200)"
     >
       <Flex>

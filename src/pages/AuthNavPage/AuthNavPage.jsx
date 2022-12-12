@@ -11,8 +11,11 @@ import {
 const WithBackground = () => {
   return (
 <Box 
-w='100%'
-h='1000'
+
+marginLeft={'auto'}
+marginRight={'auto'}
+w='500px'
+h='800px'
 bgGradient='linear(blue.100 0%, blue.100 25%, yellow.100 50%)'
 >
   <Flex>
