@@ -13,9 +13,9 @@ const UserMenu = () => {
   return (
     <Box>
       <Flex h={16} alignItems={'center'} 
-      marginRight={'250px'}>
-        <Text fontSize="23px" color="#80b438"  mr={50}>
-        hi! {name} 
+      >
+        <Text fontSize="23px" color="green"  mr={30}>
+        hi {name} !
         </Text>
         <Button
           type="button"

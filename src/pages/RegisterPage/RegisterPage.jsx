@@ -58,22 +58,21 @@ const SignupView = () => {
     <Box 
     w='100%' 
     h='1000px' 
-    bgGradient='linear(to-r, green.200, pink.500)'>
+    bgGradient='linear(to-r, gray.500, green.400, blue.300)'>
     <Flex 
     >
       {isSuccess && <Navigate to="/contacts" replace={true} />}
 
       <Stack mx={'auto'}
-      marginTop={'200px'} >
+      marginTop={'150px'} >
         <Stack >
         </Stack>
         <Box
           as="form"
-          rounded={'lg'}
-          bg={'burlywood'}
+          
           onSubmit={handleSubmit}
           p={20}
-          borderRadius={'20px'}
+        
         >
           <Stack spacing={4}>
             <FormControl id="firstName" isRequired>
@@ -84,6 +83,8 @@ const SignupView = () => {
                 name="name"
                 onChange={handleInputChange}
                 color={'black'}
+
+                
               />
             </FormControl>
             <FormControl id="email" isRequired>
@@ -95,6 +96,7 @@ const SignupView = () => {
                 value={email}
                 name="email"
                 color={'black'}
+      
               />
             </FormControl>
             <FormControl id="password" isRequired>
@@ -107,6 +109,7 @@ const SignupView = () => {
                   minLength={7}
                   name="password"
                   color={'black'}
+ 
                 />
                 <InputRightElement h={'full'}>
                   <Button
@@ -129,7 +132,7 @@ const SignupView = () => {
                 marginBottom={'30px'}
                 bg={'white'}
                 color={'black'}
-                _hover={{
+                _hover={{ 
                   bg: '#80b438',
                 }}
               >

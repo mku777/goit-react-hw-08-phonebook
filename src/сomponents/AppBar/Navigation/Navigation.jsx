@@ -4,8 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Navigation = () => {
   return (
     <div style={{
-    marginLeft: '250px',
-    fontSize: '23px'
+  
+    fontSize: '23px',
+    fontStyle: 'italic'
     }}>
       <nav>
         <NavLink to="contacts">Contacts</NavLink>

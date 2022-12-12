@@ -7,7 +7,7 @@ import { Box, Flex } from '@chakra-ui/react';
 const AppBar = () => {
   return (
     <Box>
-      <Flex alignItems={'center'} justifyContent={'space-between'}>
+      <Flex alignItems={'center'} justifyContent={'space-evenly'}>
         <Navigation />
         <UserMenu />
       </Flex>

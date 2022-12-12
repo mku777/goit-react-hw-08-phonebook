@@ -13,19 +13,21 @@ const WithBackground = () => {
 <Box 
 w='100%'
 h='1000'
-bgGradient='linear(red.100 0%, orange.100 25%, yellow.100 50%)'
+bgGradient='linear(blue.100 0%, blue.100 25%, yellow.100 50%)'
 >
   <Flex>
       <VStack
         w={'full'}
         justifyContent={'center'}
-        marginTop={'250px'}
+        marginTop={'300px'}
         >
        
           <Text
             color={'black'}
             fontWeight={700}
             fontSize={'38px'}
+         fontStyle={'italic'}
+         marginBottom={'40px'}
           >
             The Phone Book
           </Text>

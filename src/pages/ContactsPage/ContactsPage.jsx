@@ -12,11 +12,17 @@ import { Heading, Box } from '@chakra-ui/react';
 const ContactsView = () => {
   const isLogdedin = useSelector(getLoggedin);
   return (
-    <Box w="400px" mx="auto" my="8">
+    <Box w="450px" mx="auto" my="5"
+    padding={'15px 15px 15px 15px'}
+    boxShadow={'rgba(0, 0, 0, 0.24) 0px 3px 8px;'}
+    borderRadius={'20px'}
+    >
       {!isLogdedin && <Navigate to="/" replace={true} />}
-      <Heading mb={5}>Phonebook</Heading>
+      <Heading 
+      textAlign={'center'}>Phonebook</Heading>
       <ContactForm />
-      <Heading mb={5}>Contacts</Heading>
+      <Heading 
+       textAlign={'center'}>Contacts</Heading>
       <Filter />
       <ContactList />
     </Box>

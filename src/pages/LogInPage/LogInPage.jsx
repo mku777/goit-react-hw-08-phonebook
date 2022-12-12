@@ -57,7 +57,7 @@ const LoginView = () => {
     <Box
     w='100%'
     h='1000px'
-    bgGradient='linear(to-r, gray.300, yellow.400, pink.200)'>
+    bgGradient='linear(to-r, gray.300, red.300, green.200)'>
     <Flex
     
     >
@@ -69,7 +69,7 @@ const LoginView = () => {
         </Stack>
         <Box
           as="form"
-          bg={'burlywood'}
+       
           p={20}
           borderRadius={'20px'}
           autoComplete="off"
@@ -86,6 +86,7 @@ const LoginView = () => {
                 name="email"
                 value={email}
                 color={'black'}
+         
               />
             </FormControl>
             <FormControl id="password">
@@ -96,6 +97,7 @@ const LoginView = () => {
                 value={password}
                 name="password"
                 color={'black'}
+     
               />
             </FormControl>
             <Stack spacing={10}>
