@@ -54,9 +54,11 @@ const LoginView = () => {
 
   return (
     <Box
+    marginTop={'30px'}
+borderRadius={'30px'}
     marginLeft={'auto'}
 marginRight={'auto'}
-w='700px'
+w='500px'
 h='800px'
       bgGradient="linear(to-r, gray.300, red.300, green.200)"
     >
