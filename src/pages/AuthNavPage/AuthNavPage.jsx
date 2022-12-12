@@ -19,7 +19,7 @@ bgGradient='linear(blue.100 0%, blue.100 25%, yellow.100 50%)'
       <VStack
         w={'full'}
         justifyContent={'center'}
-        marginTop={'300px'}
+        marginTop={'250px'}
         >
        
           <Text

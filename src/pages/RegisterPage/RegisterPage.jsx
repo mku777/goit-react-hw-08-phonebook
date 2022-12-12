@@ -64,7 +64,7 @@ const SignupView = () => {
       {isSuccess && <Navigate to="/contacts" replace={true} />}
 
       <Stack mx={'auto'}
-      marginTop={'150px'} >
+      marginTop={'100px'} >
         <Stack >
         </Stack>
         <Box
@@ -144,7 +144,13 @@ const SignupView = () => {
               align={'start'}
               justify={'center'}
             >
-              <Button type="button" onClick={goBack}>
+              <Button type="button" onClick={goBack}
+              bg={'white'}
+              color={'black'}
+              _hover={{ 
+                color: 'white',
+                bg: 'black',
+              }}>
                 Back
               </Button>
             </Stack>

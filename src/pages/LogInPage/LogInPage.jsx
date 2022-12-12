@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react';
 import { toast } from 'react-toastify';
 
-
 const LoginView = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -55,78 +54,81 @@ const LoginView = () => {
 
   return (
     <Box
-    w='100%'
-    h='1000px'
-    bgGradient='linear(to-r, gray.300, red.300, green.200)'>
-    <Flex
-    
+      w="100%"
+      h="1000px"
+      bgGradient="linear(to-r, gray.300, red.300, green.200)"
     >
-      {isSuccess && <Navigate to="/contacts" replace={true} />}
+      <Flex>
+        {isSuccess && <Navigate to="/contacts" replace={true} />}
 
-      <Stack  mx={'auto'} 
-       marginTop={'200px'}>
-        <Stack align={'center'}>
-        </Stack>
-        <Box
-          as="form"
-       
-          p={20}
-          borderRadius={'20px'}
-          autoComplete="off"
-          onSubmit={handleSubmit}
-        >
-          <Stack spacing={4}>
-            <FormControl id="email">
-              <FormLabel color={'black'}>Email</FormLabel>
-              <Input
-                type="email"
-                pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
-                required
-                onChange={handleInputChange}
-                name="email"
-                value={email}
-                color={'black'}
-         
-              />
-            </FormControl>
-            <FormControl id="password">
-              <FormLabel color={'black'}>Password</FormLabel>
-              <Input
-                type="password"
-                onChange={handleInputChange}
-                value={password}
-                name="password"
-                color={'black'}
-     
-              />
-            </FormControl>
-            <Stack spacing={10}>
-              <Button
-                disabled={email && password ? false : true}
-                type="submit"
-                marginTop={'20px'}
-                bg={'white'}
-                color={'black'}
-                _hover={{
-                  bg: '#80b438',
-                }}
-              >
-                Log in
-              </Button>
-              <Stack
-                direction={{ base: 'column', sm: 'row' }}
-                align={'start'}
-                justify={'center'}
-              >
-                <Button type="button" onClick={goBack}>
-                  Back
+        <Stack mx={'auto'} marginTop={'100px'}>
+          <Stack align={'center'}></Stack>
+          <Box
+            as="form"
+            p={20}
+            borderRadius={'20px'}
+            autoComplete="off"
+            onSubmit={handleSubmit}
+          >
+            <Stack spacing={4}>
+              <FormControl id="email">
+                <FormLabel color={'black'}>Email</FormLabel>
+                <Input
+                  type="email"
+                  pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                  required
+                  onChange={handleInputChange}
+                  name="email"
+                  value={email}
+                  color={'black'}
+                />
+              </FormControl>
+              <FormControl id="password">
+                <FormLabel color={'black'}>Password</FormLabel>
+                <Input
+                  type="password"
+                  onChange={handleInputChange}
+                  value={password}
+                  name="password"
+                  color={'black'}
+                />
+              </FormControl>
+              <Stack spacing={10}>
+                <Button
+                  disabled={email && password ? false : true}
+                  type="submit"
+                  marginTop={'20px'}
+                  bg={'white'}
+                  color={'black'}
+                  _hover={{
+                    bg: '#80b438',
+                  }}
+                >
+                  Log in
                 </Button>
+                <Stack
+                  direction={{ base: 'column', sm: 'row' }}
+                  align={'start'}
+                  justify={'center'}
+                >
+                  <Button
+                    type="button"
+                    onClick={goBack}
+                    bg={'white'}
+                    color={'black'}
+                    _hover={{
+                      color: 'white',
+                      bg: 'black',
+                    }}
+                  >
+                    Back
+                  </Button>
+                </Stack>
               </Stack>
             </Stack>
-          </Stack>
-        </Box>
-      </Stack>
-    </Flex>
+          </Box>
+        </Stack>
+      </Flex>
     </Box>
   );
 };
