@@ -1,0 +1,64 @@
+import { NavLink } from 'react-router-dom';
+
+import {
+  Flex,
+  Button,
+  Text,
+  VStack,
+  Box
+} from '@chakra-ui/react';
+
+const WithBackground = () => {
+  return (
+<Box 
+w='100%'
+h='1000'
+bgGradient='linear(red.100 0%, orange.100 25%, yellow.100 50%)'
+>
+  <Flex>
+      <VStack
+        w={'full'}
+        justifyContent={'center'}
+        marginTop={'250px'}
+        >
+       
+          <Text
+            color={'black'}
+            fontWeight={700}
+            fontSize={'38px'}
+          >
+            The Phone Book
+          </Text>
+         
+            <Button
+              as={NavLink}
+              to="register"
+              bg={'burlywood'}
+              width={'150px'}
+              borderRadius={'3px'}
+              padding={'23px'}
+              color={'white'}
+              _hover={{ bg: '#80b438' }}
+            >
+              Register
+            </Button>
+            <Button
+              as={NavLink}
+              to="login"
+              bg={'burlywood'}
+              width={'150px'}
+              padding={'23px'}
+              borderRadius={'3px'}
+              color={'white'}
+              _hover={{ bg: '#80b438' }}
+            >
+              Log in
+            </Button>
+
+      </VStack>
+    </Flex>
+    </Box>
+  );
+};
+
+export default WithBackground;
